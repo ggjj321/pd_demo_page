@@ -46,22 +46,47 @@
   <style>
     .videoPicturecontainer {
       display: flex;
-      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
     }
 
-    .videoPicturecolumn {
+    .video-column {
       flex: 1;
+      height: 720;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image-item {
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 20px;
     }
 
-    .videoPicturecolumn video,
-    .videoPicturecolumn img {
-      height: 500px;
-      /* 固定高度 */
+    .image-item img {
       width: auto;
-      /* 宽度自动调整以保持比例 */
+      object-fit: contain;
+      /* 保持等比例缩放 */
+    }
+
+    /* 设置图片所占的比例 */
+    .image-item.top {
+      flex: 420 / 1049;
+      /* 上方图片高度比例 */
+    }
+
+    .image-item.bottom {
+      flex: 629 / 1049;
+      /* 下方图片高度比例 */
     }
   </style>
 
@@ -122,17 +147,28 @@
 
   <div class="videoPicturecontainer">
     <!-- Teaser video -->
-    <div class="videoPicturecolumn">
+    <div class="video-column">
       <video poster="" id="tree" autoplay controls muted loop>
+        <h1>gait video</h1>
         <source src="static/videos/Gait_Demo_Video.mp4" type="video/mp4">
       </video>
     </div>
     <!-- Image -->
-    <div class="videoPicturecolumn">
-      <img src="static/images/Gait_result_demo_01.png" alt="MY ALT TEXT" />
-      <h2 class="subtitle has-text-centered">
-        Image Title
-      </h2>
+    <div class="image-column">
+      <div class="image-item">
+        <img src="static/images/Gait_result_demo_01.png" alt="MY ALT TEXT 1" />
+        
+      </div>
+      <h1>explain1</h1>
+      <div class="image-item">
+        <img src="static/images/gait_illatrations.png" alt="MY ALT TEXT 2" />
+      </div>
+      <h1>explain2</h1>
+    </div>
+    <div class="video-column">
+      <video poster="" id="tree" autoplay controls muted loop>
+        <source src="static/videos/voice_demo.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 
