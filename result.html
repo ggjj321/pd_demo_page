@@ -42,6 +42,23 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      /* 水平佈局 */
+      gap: 20px;
+      /* 列之間的間距 */
+    }
+
+    .column {
+      flex: 1;
+      /* 每列佔據相同的寬度 */
+      padding: 10px;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -96,6 +113,29 @@
       </div>
     </div>
   </section>
+
+  <div class="container">
+    <!-- Teaser video-->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <video poster="" id="tree" autoplay controls muted loop>
+            <!-- Your video here -->
+            <source src="static/videos/Gait_Demo_Video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+    <div class="column">
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/Gait_result_demo_01.png" alt="MY ALT TEXT" />
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+    </div>
+  </div>
+  </div>
 
 
   <!-- Teaser video-->
