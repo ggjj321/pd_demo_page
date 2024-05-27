@@ -88,6 +88,15 @@
       flex: 629 / 1049;
       /* 下方图片高度比例 */
     }
+    body {
+            font-size: 24px; /* Adjust this value as needed */
+    }
+    ol {
+          margin-left: 80px; /* Adjust the value to move more or less to the right */
+    }
+    .subtitle.has-text-centered {
+            font-size: 32px; /* Adjust this value as needed */
+    }
   </style>
 
 </head>
@@ -183,14 +192,38 @@
         <img src="static/images/Gait_result_demo_01.png" alt="MY ALT TEXT 1" />
         
       </div>
-      <h1>explain1</h1>
+      <h1>Walking gait landmark prediction</h1>
       <div class="image-item">
         <img src="static/images/gait_illatrations.png" alt="MY ALT TEXT 2" />
       </div>
-      <h1>explain2</h1>
+      <h1>Analysis of gait landmarks</h1>
     </div>
   </div>
 
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h1 class="subtitle has-text-centered">
+          Analysing Finger Tapping
+        </h1>
+        <h5 class="has-text-centered">
+
+          In finger tapping analysis, participants were instructed to perform finger tapping as quickly as possible for a duration of 30 seconds in front of a camera.
+          Participants were asked to raise their hands as close to the camera as possible for optimal visibility.
+          We used Google MediaPipe to detect the finger gestures and identified a total of 21 landmarks of hand gestures.
+          
+        </h5>
+        <h1>Key Finger Tapping Features:</h1>
+        <ol>
+          <li>Finger Tapping Duration: Measures the time it takes for the index finger to touch the thumb</li>
+          <li>Finger Tapping Duration Change: Observes the variation in the duration of the index-to-thumb touches</li>
+          <li>Finger Tapping Distance: Calculates the distance between the index finger and thumb</li>
+          <li>Finger Tapping Frequency: Calculates the frequency of finger tapping</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  
   <div class="videoPicturecontainer">
     <!-- Teaser video -->
     <div class="video-column">
@@ -204,9 +237,35 @@
       <div class="image-item">
         <img src="static/images/Hand_results_demo_01.png" alt="MY ALT TEXT 1" />
       </div>
-      <h1>explain1</h1>
+      <h1>Finger tapping feature extraction</h1>
     </div>
   </div>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h1 class="subtitle has-text-centered">
+          Analysing Speech
+        </h1>
+        <h5 class="has-text-centered">
+
+          In the voice analysis, participants were asked to read a short paragraph from "The North Wind and the Sun," which contains approximately 500 words.
+          The distance between the voice recorder and the participants was about 35 cm.
+          
+        </h5>
+        <h1>Key Voice Features:</h1>
+        <ol>
+          <li>Reading Time: Duration taken to read the paragraph</li>
+          <li>Phonetic Score: Assessment of pronunciation accuracy</li>
+          <li>Pause Percentage: Proportion of pauses during reading</li>
+          <li>Voice Volume Variance: Variability in the loudness of the voice</li>
+          <li>Average Pitch: Mean pitch of the voice signal</li>
+          <li>Pitch Variance: Variability in the pitch of the voice</li>
+
+        </ol>
+      </div>
+    </div>
+  </section>
 
   <div class="videoPicturecontainer">
     <!-- Teaser video -->
