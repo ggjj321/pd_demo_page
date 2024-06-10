@@ -160,12 +160,14 @@
         <h1 class="subtitle has-text-centered">
           Analysing 1 minute Walking Gait
         </h1>
+        <br>
         <h5 class="has-text-centered">
 
           In our gait analysis, we utilized a human pose estimation model to accurately estimate body poses.
           This model was pre-trained and used for both pose analysis and 2D-to-3D landmark prediction.
                    
         </h5>
+        <br>
         <h1>Key Gait Features:</h1>
         <ol>
           <li>Walking Duration: Measures the total time taken to walk a certain distance</li>
@@ -174,6 +176,7 @@
           <li>Percentage of Foot on Ground: Analyzes how long each foot stays in contact with the ground</li>
 
         </ol>
+        <br>
         <br>
         <video poster="" id="tree" autoplay controls muted loop height="100%">
           <!-- Your video here -->
@@ -190,6 +193,7 @@
         <h1 class="subtitle has-text-centered">
           Analysing Finger Tapping
         </h1>
+        <br>
         <h5 class="has-text-centered">
 
           In finger tapping analysis, participants were instructed to perform finger tapping as quickly as possible for a duration of 30 seconds in front of a camera.
@@ -197,6 +201,7 @@
           We used Google MediaPipe to detect the finger gestures and identified a total of 21 landmarks of hand gestures.
           
         </h5>
+        <br>
         <h1>Key Finger Tapping Features:</h1>
         <ol>
           <li>Finger Tapping Duration: Measures the time it takes for the index finger to touch the thumb</li>
@@ -204,26 +209,16 @@
           <li>Finger Tapping Distance: Calculates the distance between the index finger and thumb</li>
           <li>Finger Tapping Frequency: Calculates the frequency of finger tapping</li>
         </ol>
+        <br>
+        <br>
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <!-- Your video here -->
+          <source src="static/videos/Finger_Tapping_Demo.mp4" type="video/mp4">
+        </video>
+        <br>
       </div>
     </div>
   </section>
-  
-  <div class="videoPicturecontainer">
-    <!-- Teaser video -->
-    <div class="video-column">
-      <video poster="" id="tree" autoplay controls muted loop>
-        <h1>gait video</h1>
-        <source src="static/videos/Hand_Demo_Video_1.mp4" type="video/mp4">
-      </video>
-    </div>
-    <!-- Image -->
-    <div class="image-column">
-      <div class="image-item">
-        <img src="static/images/Hand_results_demo_01.png" alt="MY ALT TEXT 1" />
-      </div>
-      <h1>Finger tapping feature extraction</h1>
-    </div>
-  </div>
 
   <section class="hero teaser">
     <div class="container is-max-desktop">
